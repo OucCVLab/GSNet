@@ -76,6 +76,5 @@ model.eval()
 Searching for CIFAR-10/100 models with budget params < 1M , using different zero-shot proxies:
 
 '''bash scripts/Flops_NAS_cifar_params1M.sh scripts/GradNorm_NAS_cifar_params1M.sh scripts/NASWOT_NAS_cifar_params1M.sh scripts/Params_NAS_cifar_params1M.sh scripts/Random_NAS_cifar_params1M.sh scripts/Syncflow_NAS_cifar_params1M.sh scripts/TE_NAS_cifar_params1M.sh scripts/Zen_NAS_cifar_params1M.sh '''
-### Designing a detection network, GSNet.
-
-you can modify the backbone of nanonet according to the searching results.
+### Designing the object detection network, GSNet.
+After the search stage, we got the structure of backbone. According to the result, we can modify the backbone based on nanodet.
